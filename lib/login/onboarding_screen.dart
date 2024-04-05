@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:lion_love/login/screens/bio_screen.dart';
 import 'package:lion_love/login/screens/demo_screen.dart';
 import 'package:lion_love/login/screens/email_screen.dart';
+import 'package:lion_love/login/screens/picture_screen.dart';
 import 'package:lion_love/login/screens/start_screen.dart';
 import 'package:lion_love/widgets/custom_appbar.dart';
 
@@ -19,7 +21,9 @@ class OnBoarding extends StatelessWidget {
   static const List<Tab> tabs=<Tab>[
     Tab(text:"Start"),
     Tab(text:"Email"),
-    Tab(text:"Demo")
+    Tab(text:"Demo"),
+    Tab(text:"Pictures"),
+    Tab(text:"Bio"),
   ];
   @override
   Widget build(BuildContext context) {
@@ -37,6 +41,8 @@ class OnBoarding extends StatelessWidget {
             Start(tabController:tabController),
             Email(tabController:tabController),
             Demo(tabController:tabController),
+            Pictures(tabController:tabController),
+            Bio(tabController:tabController),
           ]
         ),
       );

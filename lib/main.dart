@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
           "/": (context) =>OnBoarding(),
           MyRoutes.OnboardingRoute:(context)=>OnBoarding(),
           MyRoutes.homeRoute: (context) => HomePage(),
-          MyRoutes.loginRoute: (context) => LoginScreen(),
+          // MyRoutes.loginRoute: (context) => LoginScreen(),
           MyRoutes.usersRoute:(context)=>UserScreen(),
         },
         // Set your home page widget here
